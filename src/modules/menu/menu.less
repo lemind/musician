@@ -1,0 +1,32 @@
+.header {
+
+  font: 400 17px @Dosis;
+  text-transform: uppercase;
+  background-image: url("/static/img/guy.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  height: 1000px;
+
+  &__menu {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  &__menu-nav {
+    list-style-type: none;
+  }
+  &__menu-link {
+    text-decoration: none;
+    color: @color-dark-grey;
+  }
+  &__menu-link:hover {  
+    color: @color-black;
+    border-bottom: 2px solid @color-black;
+    padding-bottom: 4px;
+  }
+  &__menu-item {
+    display: inline;
+    line-height: 62px;
+    margin: 0 20px 0 20px;
+  }
+}

@@ -1,0 +1,88 @@
+.discography {
+  text-align: center;
+
+  &__title {
+    padding: 0 50px 0 50px;
+    position: relative;
+  }
+  &__title-decor {
+    border-bottom: 1px solid @color-black;
+    width: 350px;
+    position: absolute;
+    top: 21px;
+    left: 740px;
+  }
+  &__about {
+    font: 400 14px/23px @OpenSans;
+    display: block;
+    width: 40%;
+    color: @color-light-grey;
+    margin: 0 auto;
+    padding: 25px 0 135px 0;
+  }
+  &__column1 {
+    text-align: left;
+    width: 40%;
+    display: inline-block;
+    padding: 18px 10px 0 0;
+    box-sizing: border-box;
+  }
+  &__column2 {
+    text-align: left;
+    width: 60%;
+    display: inline-block;
+    padding: 0 0 100px 10px;
+    box-sizing: border-box;
+    text-align: justify;
+  }
+  &__albums {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  &__disc {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+    &-year {
+      font: 700 14px/33px @OpenSans;
+      color: @color-dark-grey;
+    }
+    &-title {
+      font: 700 14px/33px @OpenSans;
+      color: @color-black;
+      display: block;
+      text-transform: uppercase;
+      border-top: 1px solid @color-black;
+    }
+    &-about {
+      font: 400 23px/43px @OpenSans;
+      color: @color-black;      
+    }
+    &-description {
+      font: 400 14px/23px @OpenSans;
+      color: @color-light-grey;
+      display: block;
+    }
+  }
+  &__button {
+    font: 700 14px @OpenSans;
+    margin-top: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    color: @color-black;
+
+    &-text {
+      position: absolute;
+      top: 20px;
+      left: 75px;
+    }
+  }
+  &__button:hover .discography__button-text {
+    color: @color-white;
+  }  
+}
+
+
