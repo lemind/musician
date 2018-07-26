@@ -1,0 +1,166 @@
+.compositions {
+  text-align: center;
+
+  &__title {
+    padding: 0 50px 0 50px;
+    position: relative;
+    margin-top: 120px;
+  }
+  &__title-decor {
+    border-bottom: 1px solid @color-black;
+    width: 350px;
+    position: absolute;
+    top: 21px;
+    left: 740px;
+  }
+  &__about {
+    font: 400 14px/23px @OpenSans;
+    display: block;
+    width: 40%;
+    color: @color-light-grey;
+    margin: 0 auto;
+    padding: 25px 0 110px 0;
+  }
+  &__playlist {
+    width: 1200px;
+    margin: 0 auto;    
+  }
+  &__song {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-bottom: 45px;
+
+    &-year {
+      font: 700 14px/33px @OpenSans;
+      color: @color-dark-grey;
+    }
+    &-title {
+      font: 700 14px/33px @OpenSans;
+      color: @color-black;
+      display: block;
+      text-transform: uppercase;
+      border-top: 1px solid @color-black;
+      width: 395px;
+    }
+    &-about {
+      font: 400 23px/43px @OpenSans;
+      color: @color-black;
+      margin: 20px 0 20px 0;
+      display: inline-block;
+    }
+    &-description {
+      font: 400 14px/23px @OpenSans;
+      color: @color-light-grey;
+      display: block;
+    }
+  }
+  &__column1 {
+    text-align: left;
+    padding: 30px 20px 0 30px;
+    background-color: #f5f6f6;
+    box-sizing: border-box;
+  }
+  &__button {
+    font: 700 14px/55px @OpenSans;
+    color: @color-black;
+    width: 196px;
+    height: 56px;
+    cursor: pointer;
+    text-align:center;
+    box-sizing: border-box;
+    border: 0.1px solid rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    margin-top: 35px;
+    outline: none;
+    background-color: #f5f6f6;
+  }
+  &__button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  &__button::after {
+    content: "\f105";
+    font-family: FontAwesome;
+    padding-left: 12px;
+  }  
+  &__details {
+
+    &-social {
+      font: 400 14px @OpenSans;
+      color: #abacac;
+      display: inline-block;
+      padding: 10px 10px 0 25px;
+      vertical-align: bottom;
+    }
+    &-listeners::before {
+      content: "\f027";
+      font-family: FontAwesome;
+      padding: 0 5px 0 20px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    &-favorite::before {
+      content: "\f004";
+      font-family: FontAwesome;
+      padding: 0 5px 0 20px;
+      font-size: 15px;
+      cursor: pointer; 
+    }
+    &-share::before {
+      content: "\f14d";
+      font-family: FontAwesome;
+      padding: 0 5px 0 20px;
+      font-size: 15px;
+      cursor: pointer;      
+    }
+    &-discuss::before {
+      content: "\f27a";
+      font-family: FontAwesome;
+      padding: 0 5px 0 20px;
+      font-size: 15px;
+      cursor: pointer;      
+    }
+  }
+  &__column2 {
+    position: relative;
+    box-sizing: border-box;
+  }
+  &__listen {
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    font: 400 14px @OpenSans;
+    color: @color-white;
+    position: absolute;
+    bottom: 5px;
+    left: 40px;
+
+    &-time_color {
+      color: #abacac;
+      padding-left: 20px;
+    }
+    &-start::before {
+      content: "\f04b";
+      font-family: FontAwesome;
+      cursor: pointer;
+      padding-right: 20px;     
+    }
+  }
+}
+input[type=range] {
+  -webkit-appearance: none;
+  width: 406px;
+  height: 2px;
+  background-color: #abacac;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #abacac;
+  height: 16px;
+  width: 16px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
