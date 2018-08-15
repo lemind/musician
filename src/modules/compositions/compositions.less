@@ -54,6 +54,9 @@
       color: @color-light-grey;
       display: block;
     }
+    &_reverse {
+      flex-flow: row-reverse nowrap;      
+    }
   }
   &__column1 {
     text-align: left;
@@ -124,9 +127,30 @@
   &__column2 {
     position: relative;
     box-sizing: border-box;
+    height: 422px;
   }
+  &__column2::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 96.7%;
+    margin-top: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #f5f6f6;
+  }
+  &__column2_reverse::before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 96.7%;
+    margin-top: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #f5f6f6 transparent transparent; 
+  }  
   &__listen {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     box-sizing: border-box;
     font: 400 14px @OpenSans;
     color: @color-white;
@@ -144,6 +168,12 @@
       cursor: pointer;
       padding-right: 20px;     
     }
+    &-range {
+      vertical-align: middle;
+    }
+  }
+  &__cover {
+    width: 600px;
   }
 }
 input[type=range] {
@@ -157,10 +187,19 @@ input[type=range]:focus {
 }
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
-  border: 1px solid #abacac;
+  border: 1px solid #ffffff;
   height: 16px;
   width: 16px;
   border-radius: 8px;
   background-color: #ffffff;
   cursor: pointer;
+}
+.compositions__song_reverse .compositions__column2::after {
+  display: none;
+}
+.slider {
+  background-image: url("/static/img/ocean.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 }
