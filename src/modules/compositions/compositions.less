@@ -202,4 +202,93 @@ input[type=range]::-webkit-slider-thumb {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+  margin: 160px 0 160px 0;
+  text-align: center;
+  padding: 225px 0 85px 0;
+
+  &__text {
+    margin: 0 auto;
+
+    &-title {
+      font: 400 19px @Dosis;
+      color: @color-white;
+      text-transform: uppercase;
+    }
+    &-about {
+      font: 400 14px/25px @OpenSans;
+      color: @color-light-grey;
+      padding: 40px 0 70px 0;
+      width: 517px;
+      margin: 0 auto;
+    }    
+    &-description {
+      font: 400 14px @OpenSans;
+      color: #565e61;
+      padding-bottom: 60px;
+    }    
+  }
+  &__dot {
+    position: relative;
+
+    &-item {
+      border: 1px solid @color-white;
+      height: 8px;
+      width: 8px;
+      border-radius: 4px;
+      background-color: transparent;
+      cursor: pointer;    
+      display: inline-block;
+      margin: 0 18px 0 18px;
+    }
+    &-item:hover {
+      background-color: @color-white;
+    }
+  }
+  &__scroll {
+    position: relative;
+
+    &-back {
+      position: relative;
+    }
+    &-next::before {
+      content: "\f104";
+      font-family: FontAwesome;
+      font-size: 38px;
+      color: @color-black;
+      position: absolute;
+      top: 67px;
+      left: 25px;
+      z-index: 3;
+    }
+    &-next::after {
+      content: "\f105";
+      font-family: FontAwesome;
+      font-size: 38px;
+      color: @color-black;
+      position: absolute;
+      top: 67px;
+      right: 25px;
+      z-index: 3;
+    }
+  }
+  &__scroll::before {
+    content: " ";
+    position: absolute;
+    top: 180px;
+    left: 0;
+    margin-top: -180px;
+    border-width: 90px;
+    border-style: solid;
+    border-color: transparent transparent transparent white;
+  }
+    &__scroll::after {
+    content: " ";
+    position: absolute;
+    top: 180px;
+    right: 0;
+    margin-top: -180px;
+    border-width: 90px;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+  }
 }

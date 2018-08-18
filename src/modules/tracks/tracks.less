@@ -1,0 +1,52 @@
+.tracks {
+  width: 1200px;
+  margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+  &__item {
+    position: relative;
+    overflow: hidden;
+    height: 420px;
+    margin-bottom: 30px;
+
+    &-number {
+      font: 700 83px @OpenSans;
+      color: @color-dark-grey;
+      position: absolute;
+      opacity: 0.2;
+      bottom: -35px;
+      left: 270px;
+    }
+  }
+  &__text {
+    width: 325px;
+    position: absolute;
+    top: 22px;
+    left: 27px;
+
+    &-year {
+      font: 700 14px/33px @OpenSans;
+      color: @color-dark-grey;
+    }
+    &-title {
+      font: 700 14px/33px @OpenSans;
+      color: @color-white;
+      display: block;
+      text-transform: uppercase;
+      border-top: 1px solid @color-black;
+    }
+    &-about {
+      font: 400 23px/43px @OpenSans;
+      color: @color-black;
+      margin: 20px 0 20px 0;
+      display: inline-block;
+    }
+    &-description {
+      font: 400 14px/23px @OpenSans;
+      color: @color-light-grey;
+      display: block;
+    }
+  }
+}
