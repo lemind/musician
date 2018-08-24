@@ -1,0 +1,48 @@
+.events {
+  margin-top: 90px;
+  background-image: url("/static/img/bridge.jpg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: cover;
+  height: 1200px;
+
+  &__inner-wrapper {
+    margin: auto 55%;
+    width: 600px;
+    padding: 100px 0 0 0;
+    text-align: left;
+  }
+  &__title {
+    font: 400 23px @OpenSans;
+    color: @color-black;
+    padding-bottom: 5px;
+    position: relative;    
+  }
+  &__title::before {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid @color-black;
+    width: 135px;
+  }
+  &__line {
+    height: 50px;
+    border-left: 1px solid @color-black;
+    margin: 10px 0 10px 35px;
+
+    &_large {
+      height: 170px;
+      margin-bottom: 20px;
+    }
+  }
+  &__description {
+    font: 400 14px/23px @OpenSans;
+    color: @color-light-grey;
+    padding: 12px 0 12px 0;
+  }
+  &__year {
+    font: 700 14px/33px @OpenSans;
+    color: @color-dark-grey;
+  }
+}
