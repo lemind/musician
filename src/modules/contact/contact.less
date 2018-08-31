@@ -1,0 +1,72 @@
+.contact {
+  background-image: url("/static/img/hill.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  height: 1010px;
+
+  &__address {
+    font: 400 14px/14px @OpenSans;
+    display: block;
+    color: @color-light-grey;
+    padding-top: 15px;
+  }
+  &__inner-wrapper {
+    margin: auto 50%;
+    width: 580px;
+    padding: 110px 0 0 0;
+    text-align: left;
+  }
+  &__item {
+    font: 400 14px @OpenSans;
+    width: 383px;
+    height: 25px;
+    color: @color-light-grey;
+    border-bottom: 1px solid @color-black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-top: 49px;
+  }
+  &__form {
+    margin-top: 33px;
+    display: inline-block;
+    width: 385px;
+  }
+  &__social {
+    border-left: 1px solid @color-black;
+    padding-left: 25px;
+    display: inline-block;
+    float: right;
+    margin: 91px 27px 0 0;
+
+    &-item {
+      font-size: 22px;
+      cursor: pointer;
+    }
+    &-item_instagram {
+      padding: 62px 0 62px 0;
+    }
+  }
+  &__button {
+    font: 700 20px/80px @OpenSans;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+  }
+}  
+input[type="text"]:focus::-webkit-input-placeholder {
+  color: @color-light-grey;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+textarea:focus::-webkit-input-placeholder {
+  color: @color-light-grey;
+}
+textarea:focus {
+  outline: none;
+}
+input[type="text"] {
+  background-color: transparent;
+}

@@ -7,7 +7,7 @@
     width: 40%;
     color: @color-light-grey;
     margin: 0 auto;
-    padding: 25px 0 110px 0;
+    padding: 35px 0 110px 0;
   }
   &__playlist {
     width: 1200px;
@@ -32,21 +32,25 @@
       width: 395px;
     }
     &-about {
-      font: 400 23px/43px @OpenSans;
+      font: 400 23px/30px @OpenSans;
       color: @color-black;
-      margin: 20px 0 20px 0;
+      margin: 20px 0 25px 0;
       display: inline-block;
     }
     &-description {
       font: 400 14px/23px @OpenSans;
       color: @color-light-grey;
       display: block;
+
+      &_bottom {
+        padding: 20px 0 10px 0;
+      }
     }
     &_reverse {
       flex-flow: row-reverse nowrap;      
     }
   }
-  &__column1 {
+  &__info {
     text-align: left;
     padding: 30px 20px 0 30px;
     background-color: #f5f6f6;
@@ -62,7 +66,7 @@
     box-sizing: border-box;
     border: 0.1px solid rgba(0, 0, 0, 0.3);
     display: inline-block;
-    margin-top: 35px;
+    margin-top: 55px;
     outline: none;
     background-color: #f5f6f6;
   }
@@ -112,12 +116,12 @@
       cursor: pointer;      
     }
   }
-  &__column2 {
+  &__player {
     position: relative;
     box-sizing: border-box;
     height: 422px;
   }
-  &__column2::after {
+  &__player::after {
     content: " ";
     position: absolute;
     top: 50%;
@@ -127,7 +131,7 @@
     border-style: solid;
     border-color: transparent transparent transparent #f5f6f6;
   }
-  &__column2_reverse::before {
+  &__player_reverse::before {
     content: " ";
     position: absolute;
     top: 50%;
@@ -182,7 +186,7 @@ input[type=range]::-webkit-slider-thumb {
   background-color: #ffffff;
   cursor: pointer;
 }
-.compositions__song_reverse .compositions__column2::after {
+.compositions__song_reverse .compositions__player::after {
   display: none;
 }
 .slider {
@@ -224,7 +228,7 @@ input[type=range]::-webkit-slider-thumb {
       width: 8px;
       border-radius: 4px;
       background-color: transparent;
-      cursor: pointer;    
+      cursor: pointer;
       display: inline-block;
       margin: 0 18px 0 18px;
     }
@@ -247,6 +251,7 @@ input[type=range]::-webkit-slider-thumb {
       top: 67px;
       left: 25px;
       z-index: 3;
+      cursor: pointer;
     }
     &-next::after {
       content: "\f105";
@@ -257,6 +262,7 @@ input[type=range]::-webkit-slider-thumb {
       top: 67px;
       right: 25px;
       z-index: 3;
+      cursor: pointer;
     }
   }
   &__scroll::before {
@@ -269,7 +275,7 @@ input[type=range]::-webkit-slider-thumb {
     border-style: solid;
     border-color: transparent transparent transparent white;
   }
-    &__scroll::after {
+  &__scroll::after {
     content: " ";
     position: absolute;
     top: 180px;

@@ -7,35 +7,36 @@
     width: 40%;
     color: @color-light-grey;
     margin: 0 auto;
-    padding: 25px 0 110px 0;
+    padding: 35px 0 110px 0;
   }
-  &__column1 {
+  &__info {
     text-align: left;
     width: 40%;
     display: inline-block;
     padding: 18px 10px 0 0;
     box-sizing: border-box;
+
+    &_bottom {
+      padding-top: 50px;
+    }
   }
-  &__column2 {
+  &__details {
     text-align: left;
     width: 60%;
     display: inline-block;
-    padding: 0 0 100px 10px;
+    padding: 0 0 0 10px;
     box-sizing: border-box;
-    text-align: justify;
-
-    &_bottom {
-      padding: 0 0 0 10px;
-    }
   }
   &__albums {
     width: 1200px;
     margin: 0 auto;
+    padding-top: 20px;
   }
   &__disc {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+    padding-bottom: 90px;
 
     &-year {
       font: 700 14px/33px @OpenSans;
@@ -49,29 +50,38 @@
       border-top: 1px solid @color-black;
     }
     &-about {
-      font: 400 23px/43px @OpenSans;
-      color: @color-black;      
+      font: 400 23px/33px @OpenSans;
+      color: @color-black; 
     }
     &-description {
       font: 400 14px/23px @OpenSans;
       color: @color-light-grey;
       display: block;
+      padding-top: 15px;
     }
   }
   &__button {
-    font: 700 14px @OpenSans;
+    text-align: center;
+    font: 700 14px/63px @OpenSans;
     margin-top: 30px;
     text-transform: uppercase;
     cursor: pointer;
-    position: relative;
-    display: inline-block;
+    height: 56px;
+    width: 196px;
     color: @color-black;
+    background-repeat: no-repeat;
+    background-position: center center;
 
-    &-text {
-      position: absolute;
-      top: 20px;
-      left: 75px;
+    &_first {
+      background-image: url("/static/img/icons/play1.png");
     }
+    &_second {
+      background-image: url("/static/img/icons/play2.png");
+    }
+    &_third {
+      background-image: url("/static/img/icons/play3.png");
+      margin-top: 90px;
+    }        
   }
   &__button:hover .discography__button-text {
     color: @color-white;
@@ -82,7 +92,7 @@
     background-position: center top;
     background-size: cover;
     height: 787px;
-    margin-top: -330px;
+    margin-top: -388px;
   }  
 }
 
