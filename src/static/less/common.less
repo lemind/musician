@@ -9,7 +9,11 @@
   font: 400 50.49px @Dosis;
   text-transform: uppercase;
   color: @color-black;
+
+  @media (max-width: @tabletWidth) {
+    font: 400 74.5px @Dosis;
   }
+}
 .title-decor {
   border-bottom: 1px solid @color-black;
   width: 500px;
@@ -17,7 +21,13 @@
   top: 33px;
   left: 50%;
   margin-left: -250px;
-  }
+
+  @media (max-width: @tabletWidth) {
+    width: 740px;
+    margin-left: -370px;
+    top: 47px;
+  }  
+}
 .title_discography {
   color: #8f5f50;
 }
@@ -27,6 +37,11 @@
 }
 .title-decor_events {
   margin-left: -305px;
+
+  @media (max-width: @tabletWidth) {
+    width: 680px;
+    margin-left: -425px;
+  }
 }
 .title_tours {
   color: #62a2ad;
@@ -34,6 +49,11 @@
 .title-decor_compositions {
   width: 614px;
   margin-left: -307px;
+
+  @media (max-width: @tabletWidth) {
+    width: 850px;
+    margin-left: -425px;
+  }    
 }
 .title_history {
   color: #5b5c5a;
@@ -41,11 +61,25 @@
 .title-decor_history {
   width: 272px;
   margin-left: -136px;
+
+  @media (max-width: @tabletWidth) {
+    width: 410px;
+    margin-left: -205px;
+  }
 }
 .title_contact {
   color: #454545;
   padding: 0;
+
+  @media (max-width: @tabletWidth) {
+    padding-bottom: 5px;
+  }
 }
 .title-decor_contact {
   margin-left: -285px;
+
+  @media (max-width: @tabletWidth) {
+    width: 740px;
+    margin-left: -396px;
+  }
 }

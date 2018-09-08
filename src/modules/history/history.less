@@ -1,10 +1,16 @@
-.hisory {
+.history {
   text-align: center;
   background-image: url("/static/img/road.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  height: 1000px;  
+  height: 1000px;
+
+  @media (max-width: @tabletWidth) {
+    background-position: 53% bottom;
+    margin-top: 260px;
+    height: 1290px;
+  }
 
   &__about {
     font: 400 14px/23px @OpenSans;
@@ -12,23 +18,64 @@
     width: 40%;
     color: @color-light-grey;
     margin: 0 auto;
-    padding: 35px 0 110px 0;    
+    padding: 35px 0 110px 0;
+
+    @media (max-width: @tabletWidth) {
+      font: 400 21px/35px @OpenSans;
+      width: 80%;
+      padding: 60px 0 180px 0;
+    }
+  }
+  &__inner-wrapper {
+    @media (max-width: @tabletWidth) {
+      position: relative;
+      top: -105px;
+    }
   }
   &__dates {
     font: 400 35.49px @Dosis;
     color: #c8c8c8;
     text-transform: uppercase;
     padding-top: 55px;
+
+    @media (max-width: @tabletWidth) {
+      font-size: 53px;
+      text-align: center;
+    }
   }
   &__line {
     width: 148px;
     display: inline-block;
     border-top: 1px solid #b1b1b1;
     padding-bottom: 10px;
+
+    @media (max-width: @tabletWidth) {
+      width: 220px;
+      padding-bottom: 19px;
+    }
+    &_hidden {
+      @media (max-width: @tabletWidth) {
+        display: none;
+      }
+    }
+    &_short {
+      @media (max-width: @tabletWidth) {
+        width: 80px;
+      }
+    }
   }
   &__data {
     padding: 0 20px 0 20px;
 
+    @media (max-width: @tabletWidth) {
+      padding: 0 25px 0 25px;
+    }
+
+    &_hidden {
+      @media (max-width: @tabletWidth) {
+        display: none;
+      }
+    }
     &_bold {
       color: #575a59;
     }
@@ -39,7 +86,11 @@
       border-radius: 5px;
       background-color: #575a59;   
       display: inline-block;
-      margin: 0 50px 6px 0;  
+      margin: 0 50px 6px 0;
+
+      @media (max-width: @tabletWidth) {
+        margin: 0 80px 15px 0;
+      }      
     }
     &_bold::after {
       content: " ";
@@ -48,7 +99,11 @@
       border-radius: 5px;
       background-color: #575a59;
       display: inline-block;
-      margin: 0 0 6px 50px;  
+      margin: 0 0 6px 50px;
+
+      @media (max-width: @tabletWidth) {
+        margin: 0 0 15px 80px;
+      }
     }    
   }
   &__info {
@@ -57,5 +112,11 @@
     color: #5a5a58;
     width: 212px;
     padding: 20px 0 0 27px;
+
+    @media (max-width: @tabletWidth) {
+      font-size: 18px;
+      width: 264px;
+      padding: 30px 6px 0 0;
+    }
   }
 }

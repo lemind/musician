@@ -8,6 +8,11 @@
     color: @color-light-grey;
     margin: 0 auto;
     padding: 35px 0 110px 0;
+
+    @media (max-width: @tabletWidth) {
+      font: 400 21px/35px @OpenSans;
+      width: 80%;
+    }        
   }
   &__concert {
     background-image: url("/static/img/waterfall.jpg");
@@ -17,9 +22,17 @@
     height: 980px;
     text-align: left;
 
+    @media (max-width: @tabletWidth) {
+      background-position: 30% top;
+    } 
+
     &-year {
       font: 700 14px/33px @OpenSans;
       color: @color-dark-grey;
+    
+      @media (max-width: @tabletWidth) {
+        font-size: 21px;
+      }         
     }
     &-title {
       font: 700 14px/33px @OpenSans;
@@ -29,19 +42,39 @@
       border-top: 1px solid @color-black;
       margin-bottom: 50px;
       width: 400px;
+
+      @media (max-width: @tabletWidth) {
+        font-size: 21px;
+        width: 583px;
+        margin-bottom: 110px;
+      }               
     }
     &-about {
       font: 400 23px/43px @OpenSans;
-      color: @color-black;      
+      color: @color-black;
+
+      @media (max-width: @tabletWidth) {
+        font-size: 34px;
+      }                 
     }
     &-description {
       font: 400 14px/23px @OpenSans;
       color: @color-light-grey;
       display: block;
       width: 675px;
+
+      @media (max-width: @tabletWidth) {
+        font: 400 21px/35px @OpenSans;
+        padding-top: 20px;
+        width: 915px;
+      }               
     }
     &-wrapper {
      padding: 330px 0 0 300px;
+
+      @media (max-width: @tabletWidth) {
+        padding: 300px 0 0 200px;
+      }       
     }
   }
   &__button {
@@ -56,6 +89,13 @@
     display: inline-block;
     margin-top: 35px;
     outline: none;
+
+    @media (max-width: @tabletWidth) {
+    width: 290px;
+    height: 83px;
+    font: 700 21px/84px @OpenSans;
+    margin-top: 65px;
+    }        
   }
   &__button:hover {
     background-color: rgba(0, 0, 0, 0.05);

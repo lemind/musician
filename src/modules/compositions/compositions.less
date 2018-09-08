@@ -8,10 +8,19 @@
     color: @color-light-grey;
     margin: 0 auto;
     padding: 35px 0 110px 0;
+
+    @media (max-width: @tabletWidth) {
+      font: 400 21px/35px @OpenSans;
+      width: 70%;
+    }
   }
   &__playlist {
     width: 1200px;
-    margin: 0 auto;    
+    margin: 0 auto;
+
+    @media (max-width: @tabletWidth) {
+      width: 920px;
+    }    
   }
   &__song {
     display: flex;
@@ -19,9 +28,18 @@
     justify-content: center;
     margin-bottom: 45px;
 
+    @media (max-width: @tabletWidth) {
+      display: block;
+      margin-bottom: 55px;
+    }    
+
     &-year {
       font: 700 14px/33px @OpenSans;
       color: @color-dark-grey;
+
+      @media (max-width: @tabletWidth) {
+        font-size: 21px;
+      }
     }
     &-title {
       font: 700 14px/33px @OpenSans;
@@ -30,17 +48,33 @@
       text-transform: uppercase;
       border-top: 1px solid @color-black;
       width: 395px;
+
+      @media (max-width: @tabletWidth) {
+        font-size: 21px;
+        margin-bottom: 40px;
+        margin-top: 5px;
+        width: 600px;
+      }      
     }
     &-about {
       font: 400 23px/30px @OpenSans;
       color: @color-black;
       margin: 20px 0 25px 0;
       display: inline-block;
+
+      @media (max-width: @tabletWidth) {
+        font: 400 34px/40px @OpenSans;
+        margin: 20px 0 40px 0;
+      }      
     }
     &-description {
       font: 400 14px/23px @OpenSans;
       color: @color-light-grey;
       display: block;
+
+      @media (max-width: @tabletWidth) {
+        font: 400 21px/35px @OpenSans;
+      }      
 
       &_bottom {
         padding: 20px 0 10px 0;
@@ -55,6 +89,10 @@
     padding: 30px 20px 0 30px;
     background-color: #f5f6f6;
     box-sizing: border-box;
+
+    @media (max-width: @tabletWidth) {
+      padding: 52px 90px 60px 52px;
+    }       
   }
   &__button {
     font: 700 14px/55px @OpenSans;
@@ -69,6 +107,13 @@
     margin-top: 55px;
     outline: none;
     background-color: #f5f6f6;
+
+    @media (max-width: @tabletWidth) {
+      font: 700 21.38px/55px @OpenSans;
+      width: 300px;
+      height: 87px;
+      margin-top: 85px;
+    }        
   }
   &__button:hover {
     background-color: rgba(0, 0, 0, 0.05);
@@ -86,6 +131,10 @@
       display: inline-block;
       padding: 10px 10px 0 25px;
       vertical-align: bottom;
+
+      @media (max-width: @tabletWidth) {
+        font: 400 18.33px @OpenSans;
+      }
     }
     &-listeners::before {
       content: "\f027";
@@ -93,33 +142,57 @@
       padding: 0 10px 0 20px;
       font-size: 20px;
       cursor: pointer;
+
+      @media (max-width: @tabletWidth) {
+        font-size: 30px;
+        padding: 0 15px 0 30px;
+      }         
     }
     &-favorite::before {
       content: "\f004";
       font-family: FontAwesome;
       padding: 0 10px 0 20px;
       font-size: 15px;
-      cursor: pointer; 
+      cursor: pointer;
+
+      @media (max-width: @tabletWidth) {
+        font-size: 22px;
+        padding: 0 15px 0 30px;
+      }      
     }
     &-share::before {
       content: "\f14d";
       font-family: FontAwesome;
       padding: 0 10px 0 20px;
       font-size: 15px;
-      cursor: pointer;      
+      cursor: pointer;
+
+      @media (max-width: @tabletWidth) {
+        font-size: 22px;
+        padding: 0 15px 0 30px;
+      }            
     }
     &-discuss::before {
       content: "\f27a";
       font-family: FontAwesome;
       padding: 0 10px 0 20px;
       font-size: 15px;
-      cursor: pointer;      
+      cursor: pointer;
+
+      @media (max-width: @tabletWidth) {
+        font-size: 22px;
+        padding: 0 15px 0 30px;
+      }            
     }
   }
   &__player {
     position: relative;
     box-sizing: border-box;
     height: 422px;
+
+    @media (max-width: @tabletWidth) {
+      height: 645px;
+    }
   }
   &__player::after {
     content: " ";
@@ -130,6 +203,15 @@
     border-width: 10px;
     border-style: solid;
     border-color: transparent transparent transparent #f5f6f6;
+
+    @media (max-width: @tabletWidth) {
+      top: 9px;
+      left: 48%;
+      margin-left: -17px;
+      border-width: 17px;
+      border-style: solid;
+      border-color: #f5f6f6 transparent transparent;
+    }
   }
   &__player_reverse::before {
     content: " ";
@@ -139,7 +221,16 @@
     margin-top: -10px;
     border-width: 10px;
     border-style: solid;
-    border-color: transparent #f5f6f6 transparent transparent; 
+    border-color: transparent #f5f6f6 transparent transparent;
+
+    @media (max-width: @tabletWidth) {
+      top: 9px;
+      left: 48%;
+      margin-left: -17px;
+      border-width: 17px;
+      border-style: solid;
+      border-color: #f5f6f6 transparent transparent;
+    }    
   }  
   &__listen {
     padding-bottom: 20px;
@@ -150,6 +241,12 @@
     bottom: 5px;
     left: 40px;
 
+    @media (max-width: @tabletWidth) {
+      padding-bottom: 40px;
+      left: 75px;
+      font: 400 18.45px @OpenSans;
+    }
+
     &-time_color {
       color: #abacac;
       padding-left: 20px;
@@ -158,7 +255,12 @@
       content: "\f04b";
       font-family: FontAwesome;
       cursor: pointer;
-      padding-right: 20px;     
+      padding-right: 20px;
+
+      @media (max-width: @tabletWidth) {
+        font-size: 25px;
+        padding-right: 30px;
+      }
     }
     &-range {
       vertical-align: middle;
@@ -166,6 +268,11 @@
   }
   &__cover {
     width: 600px;
+
+    @media (max-width: @tabletWidth) {
+      height: 100%;
+      width: 100%;
+    }    
   }
 }
 input[type=range] {
@@ -173,6 +280,10 @@ input[type=range] {
   width: 406px;
   height: 2px;
   background-color: #abacac;
+
+  @media (max-width: @tabletWidth) {
+    width: 625px;
+  }
 }
 input[type=range]:focus {
   outline: none;
@@ -198,6 +309,13 @@ input[type=range]::-webkit-slider-thumb {
   text-align: center;
   padding: 225px 0 85px 0;
 
+  @media (max-width: @tabletWidth) {
+    margin: 128px 0 105px 0;
+    padding: 336px 0 85px 0;
+    height: 960px;
+    box-sizing: border-box;
+  }
+
   &__text {
     margin: 0 auto;
 
@@ -205,6 +323,10 @@ input[type=range]::-webkit-slider-thumb {
       font: 400 19px @Dosis;
       color: @color-white;
       text-transform: uppercase;
+
+      @media (max-width: @tabletWidth) {
+        font-size: 27.65px;
+      }  
     }
     &-about {
       font: 400 14px/25px @OpenSans;
@@ -212,11 +334,22 @@ input[type=range]::-webkit-slider-thumb {
       padding: 40px 0 70px 0;
       width: 517px;
       margin: 0 auto;
+
+      @media (max-width: @tabletWidth) {
+        font: 400 21px/35px @OpenSans;
+        width: 769px;
+        padding: 60px 0 90px 0;
+      }      
     }    
     &-description {
       font: 400 14px @OpenSans;
       color: #565e61;
       padding-bottom: 60px;
+
+      @media (max-width: @tabletWidth) {
+        font-size: 20.93px;
+        padding-bottom: 115px;
+      }
     }    
   }
   &__dot {
@@ -231,6 +364,12 @@ input[type=range]::-webkit-slider-thumb {
       cursor: pointer;
       display: inline-block;
       margin: 0 18px 0 18px;
+
+      @media (max-width: @tabletWidth) {
+        height: 18px;
+        width: 18px;
+        border-radius: 9px;
+      }
     }
     &-item:hover {
       background-color: @color-white;
@@ -238,6 +377,10 @@ input[type=range]::-webkit-slider-thumb {
   }
   &__scroll {
     position: relative;
+
+    @media (max-width: @tabletWidth) {
+      display: none;
+    }
 
     &-back {
       position: relative;

@@ -1,13 +1,18 @@
 .discography {
   text-align: center;
 
-  &__about {
+  &__title-about {
     font: 400 14px/23px @OpenSans;
     display: block;
     width: 40%;
     color: @color-light-grey;
     margin: 0 auto;
     padding: 35px 0 110px 0;
+
+    @media (max-width: @tabletWidth) {
+      font: 400 21px/35px @OpenSans;
+      width: 80%;
+    }    
   }
   &__info {
     text-align: left;
@@ -15,6 +20,11 @@
     display: inline-block;
     padding: 18px 10px 0 0;
     box-sizing: border-box;
+
+    @media (max-width: @tabletWidth) {
+      width: 100%;
+      padding: 18px 0 40px 0;
+    }       
 
     &_bottom {
       padding-top: 50px;
@@ -26,11 +36,16 @@
     display: inline-block;
     padding: 0 0 0 10px;
     box-sizing: border-box;
+
+    @media (max-width: @tabletWidth) {
+      width: 100%;
+      padding: 0;
+    }       
   }
   &__albums {
     width: 1200px;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 20px;    
   }
   &__disc {
     display: flex;
@@ -38,27 +53,50 @@
     justify-content: center;
     padding-bottom: 90px;
 
-    &-year {
-      font: 700 14px/33px @OpenSans;
-      color: @color-dark-grey;
-    }
-    &-title {
-      font: 700 14px/33px @OpenSans;
-      color: @color-black;
+    @media (max-width: @tabletWidth) {
+      width: 1015px;
       display: block;
-      text-transform: uppercase;
-      border-top: 1px solid @color-black;
-    }
-    &-about {
-      font: 400 23px/33px @OpenSans;
-      color: @color-black; 
-    }
-    &-description {
-      font: 400 14px/23px @OpenSans;
-      color: @color-light-grey;
-      display: block;
-      padding-top: 15px;
-    }
+      margin: 0 auto;
+    }        
+  }
+  &__year {
+    font: 700 14px/33px @OpenSans;
+    color: @color-dark-grey;
+
+    @media (max-width: @tabletWidth) {
+      font-size: 21px;
+    }      
+  }
+  &__title {
+    font: 700 14px/33px @OpenSans;
+    color: @color-black;
+    display: block;
+    text-transform: uppercase;
+    border-top: 1px solid @color-black;
+
+    @media (max-width: @tabletWidth) {
+      font-size: 21px;
+    }      
+  }
+  &__about {
+    font: 400 23px/33px @OpenSans;
+    color: @color-black;
+
+    @media (max-width: @tabletWidth) {
+      font: 400 34px/42px @OpenSans;
+    }     
+  }
+  &__description {
+    font: 400 14px/23px @OpenSans;
+    color: @color-light-grey;
+    display: block;
+    padding: 15px 0 20px 0;
+
+    @media (max-width: @tabletWidth) {
+      text-align: justify;
+      font: 400 21px/35px @OpenSans;
+      padding: 25px 0 35px 0;
+    }      
   }
   &__button {
     text-align: center;
@@ -72,6 +110,14 @@
     background-repeat: no-repeat;
     background-position: center center;
 
+    @media (max-width: @tabletWidth) {
+      margin: 0 auto;
+      height: 87px;
+      width: 296px;
+      background-size: cover;
+      font: 700 21px/90px @OpenSans;
+    }             
+
     &_first {
       background-image: url("/static/img/icons/play1.png");
     }
@@ -81,6 +127,10 @@
     &_third {
       background-image: url("/static/img/icons/play3.png");
       margin-top: 90px;
+
+      @media (max-width: @tabletWidth) {
+        margin-top: 0;
+      } 
     }        
   }
   &__button:hover .discography__button-text {
@@ -93,6 +143,10 @@
     background-size: cover;
     height: 787px;
     margin-top: -388px;
+
+    @media (max-width: @tabletWidth) {
+      margin-top: -300px;
+    }     
   }  
 }
 

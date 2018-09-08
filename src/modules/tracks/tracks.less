@@ -1,9 +1,13 @@
 .tracks {
   width: 1200px;
   margin: 0 auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  @media (max-width: @tabletWidth) {
+    width: 1205px;
+  }
 
   &__item {
     position: relative;
@@ -11,24 +15,52 @@
     height: 420px;
     margin-bottom: 30px;
 
+    @media (max-width: @tabletWidth) {
+      height: 644px;
+      width: 583px;
+    }
+
     &-number {
       font: 700 83px @OpenSans;
       color: @color-dark-grey;
       position: absolute;
       opacity: 0.2;
       bottom: -35px;
-      left: 270px;
+      right: 10px;
+
+      @media (max-width: @tabletWidth) {
+        font-size: 125px;
+        right: 17px;
+        bottom: -50px;
+      }
+    }
+  }
+  &__cover {
+
+    @media (max-width: @tabletWidth) {
+      width: 100%;
+      height: 100%;
     }
   }
   &__text {
     width: 325px;
     position: absolute;
-    top: 22px;
+    top: 30px;
     left: 27px;
+
+    @media (max-width: @tabletWidth) {
+      width: 466px;
+      top: 35px;
+      left: 48px;
+    }
 
     &-year {
       font: 700 14px/33px @OpenSans;
       color: @color-dark-grey;
+
+      @media (max-width: @tabletWidth) {
+        font-size: 21px;
+      }
     }
     &-title {
       font: 700 14px/33px @OpenSans;
@@ -36,17 +68,37 @@
       display: block;
       text-transform: uppercase;
       border-top: 1px solid @color-black;
+
+      @media (max-width: @tabletWidth) {
+        font-size: 21px;
+        margin-top: 5px;
+      }      
     }
     &-about {
       font: 400 23px/43px @OpenSans;
       color: @color-black;
       margin: 20px 0 20px 0;
       display: inline-block;
+
+      @media (max-width: @tabletWidth) {
+        font-size: 34px;
+        margin: 55px 0 80px 0;
+      }
+      &_first {
+        
+        @media (max-width: @tabletWidth) {
+          margin: 55px 0 36px 0;
+        }  
+      }
     }
     &-description {
       font: 400 14px/23px @OpenSans;
       color: @color-light-grey;
       display: block;
+
+      @media (max-width: @tabletWidth) {
+        font: 400 21px/35px @OpenSans;
+      }
     }
   }
 }

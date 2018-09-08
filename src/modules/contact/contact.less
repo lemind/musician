@@ -5,17 +5,35 @@
   background-size: cover;
   height: 1010px;
 
+  @media (max-width: @tabletWidth) {
+    background-position: left bottom;
+    background-size: contain;
+    margin-top: 450px;
+  }
+
   &__address {
     font: 400 14px/14px @OpenSans;
     display: block;
     color: @color-light-grey;
     padding-top: 15px;
+
+    @media (max-width: @tabletWidth) {
+      font: 400 21px/22px @OpenSans;
+    }
   }
   &__inner-wrapper {
     margin: auto 50%;
     width: 580px;
     padding: 110px 0 0 0;
     text-align: left;
+
+    @media (max-width: @tabletWidth) {
+      position: relative;
+      top: -441px;
+      left: -16%;
+      padding: 30px 0 0 0;
+      width: 810px;
+    }
   }
   &__item {
     font: 400 14px @OpenSans;
@@ -27,6 +45,17 @@
     border-left: none;
     border-right: none;
     padding-top: 49px;
+
+    @media (max-width: @tabletWidth) {
+      font-size: 21px;
+      width: 564px;
+      padding-top: 85px;
+    }
+  }
+  &__info {
+    @media (max-width: @tabletWidth) {
+      margin-top: 15px;
+    }
   }
   &__form {
     margin-top: 33px;
@@ -40,12 +69,24 @@
     float: right;
     margin: 91px 27px 0 0;
 
+    @media (max-width: @tabletWidth) {
+      margin: 120px 27px 0 0;
+    }
+
     &-item {
       font-size: 22px;
       cursor: pointer;
+
+      @media (max-width: @tabletWidth) {
+        font-size: 25px;
+      }
     }
     &-item_instagram {
       padding: 62px 0 62px 0;
+
+      @media (max-width: @tabletWidth) {
+        padding: 100px 0 100px 0;
+      }
     }
   }
   &__button {
@@ -53,6 +94,10 @@
     text-transform: uppercase;
     cursor: pointer;
     display: inline-block;
+
+    @media (max-width: @tabletWidth) {
+      font: 700 29.58px/104px @OpenSans;
+    }
   }
 }  
 input[type="text"]:focus::-webkit-input-placeholder {
