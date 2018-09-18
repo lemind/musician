@@ -24,6 +24,7 @@
 
     @media (max-width: @tabletWidth) {
       background-position: 30% top;
+      height: 100%;
     } 
 
     &-year {
@@ -41,12 +42,15 @@
       text-transform: uppercase;
       border-top: 1px solid @color-black;
       margin-bottom: 50px;
-      width: 400px;
+      //width: 400px;
+      width: 60%;
 
       @media (max-width: @tabletWidth) {
         font-size: 21px;
-        width: 583px;
+        //width: 583px;
         margin-bottom: 110px;
+        width: 60%;
+        min-width: 155px;
       }               
     }
     &-about {
@@ -61,19 +65,22 @@
       font: 400 14px/23px @OpenSans;
       color: @color-light-grey;
       display: block;
-      width: 675px;
+      //width: 675px;
+      
 
       @media (max-width: @tabletWidth) {
         font: 400 21px/35px @OpenSans;
         padding-top: 20px;
-        width: 915px;
+        //width: 915px;
+
       }               
     }
     &-wrapper {
-     padding: 330px 0 0 300px;
+     padding: 330px 40% 0 300px;
 
       @media (max-width: @tabletWidth) {
-        padding: 300px 0 0 200px;
+        padding: 200px 100px 0 200px;
+
       }       
     }
   }
@@ -94,7 +101,8 @@
     width: 290px;
     height: 83px;
     font: 700 21px/84px @OpenSans;
-    margin-top: 65px;
+    margin-top: 55px;
+    margin-bottom: 60px;
     }        
   }
   &__button:hover {

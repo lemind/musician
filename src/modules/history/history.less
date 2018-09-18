@@ -15,7 +15,7 @@
   &__about {
     font: 400 14px/23px @OpenSans;
     display: block;
-    width: 40%;
+    width: 42%;
     color: @color-light-grey;
     margin: 0 auto;
     padding: 35px 0 110px 0;
@@ -37,10 +37,14 @@
     color: #c8c8c8;
     text-transform: uppercase;
     padding-top: 55px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    width: 98%;
+    margin: 0 auto;
 
     @media (max-width: @tabletWidth) {
       font-size: 53px;
-      text-align: center;
     }
   }
   &__line {
@@ -52,16 +56,6 @@
     @media (max-width: @tabletWidth) {
       width: 220px;
       padding-bottom: 19px;
-    }
-    &_hidden {
-      @media (max-width: @tabletWidth) {
-        display: none;
-      }
-    }
-    &_short {
-      @media (max-width: @tabletWidth) {
-        width: 80px;
-      }
     }
   }
   &__data {
@@ -110,12 +104,12 @@
     margin: 0 auto;
     font: 400 14px @OpenSans;
     color: #5a5a58;
-    width: 212px;
+    max-width: 212px;
     padding: 20px 0 0 27px;
 
     @media (max-width: @tabletWidth) {
       font-size: 18px;
-      width: 264px;
+      max-width: 265px;
       padding: 30px 6px 0 0;
     }
   }

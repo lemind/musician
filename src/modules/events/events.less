@@ -8,19 +8,21 @@
 
   @media (max-width: @tabletWidth) {
     margin-top: 250px;
-    background-position: 39% bottom;
+    background-position: 53% bottom;
+    height: 100%;
   }
 
   &__inner-wrapper {
-    margin: auto 55%;
-    width: 600px;
     padding: 100px 0 0 0;
     text-align: left;
+    max-width: 30%;
+    position: relative;
+    top: -54px;
+    left: 50%;
 
     @media (max-width: @tabletWidth) {
-      margin: auto 34%;
-      padding: 0;
-      width: 826px;
+      left: 27%;
+      max-width: 55%;
     }
   }
   &__title {
@@ -81,5 +83,11 @@
     @media (max-width: @tabletWidth) {
       font-size: 21px;
     }    
+  }
+  &__year_bottom {
+
+    @media (max-width: @tabletWidth) {
+      padding-bottom: 70px;
+    }
   }
 }

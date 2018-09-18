@@ -11,16 +11,15 @@
 
     @media (max-width: @tabletWidth) {
       font: 400 21px/35px @OpenSans;
-      width: 70%;
+      width: 83%;
     }
   }
   &__playlist {
-    width: 1200px;
-    margin: 0 auto;
 
     @media (max-width: @tabletWidth) {
-      width: 920px;
-    }    
+      max-width: 1035px;
+      margin: 0 auto;
+    }
   }
   &__song {
     display: flex;
@@ -30,7 +29,7 @@
 
     @media (max-width: @tabletWidth) {
       display: block;
-      margin-bottom: 55px;
+      margin: 0 60px 45px 60px;
     }    
 
     &-year {
@@ -47,13 +46,12 @@
       display: block;
       text-transform: uppercase;
       border-top: 1px solid @color-black;
-      width: 395px;
+      margin-right: 170px;
 
       @media (max-width: @tabletWidth) {
         font-size: 21px;
         margin-bottom: 40px;
         margin-top: 5px;
-        width: 600px;
       }      
     }
     &-about {
@@ -86,12 +84,14 @@
   }
   &__info {
     text-align: left;
-    padding: 30px 20px 0 30px;
+    padding: 30px 35px 0 30px;
     background-color: #f5f6f6;
     box-sizing: border-box;
+    height: 422px;
 
     @media (max-width: @tabletWidth) {
       padding: 52px 90px 60px 52px;
+      height: 100%;
     }       
   }
   &__button {
@@ -188,10 +188,8 @@
   &__player {
     position: relative;
     box-sizing: border-box;
-    height: 422px;
 
     @media (max-width: @tabletWidth) {
-      height: 645px;
     }
   }
   &__player::after {
@@ -243,7 +241,8 @@
 
     @media (max-width: @tabletWidth) {
       padding-bottom: 40px;
-      left: 75px;
+      left: 37px;
+      width: 90%;
       font: 400 18.45px @OpenSans;
     }
 
@@ -259,7 +258,7 @@
 
       @media (max-width: @tabletWidth) {
         font-size: 25px;
-        padding-right: 30px;
+        padding-right: 25px;
       }
     }
     &-range {
@@ -282,7 +281,7 @@ input[type=range] {
   background-color: #abacac;
 
   @media (max-width: @tabletWidth) {
-    width: 625px;
+    width: 72%;
   }
 }
 input[type=range]:focus {
@@ -312,7 +311,7 @@ input[type=range]::-webkit-slider-thumb {
   @media (max-width: @tabletWidth) {
     margin: 128px 0 105px 0;
     padding: 336px 0 85px 0;
-    height: 960px;
+    //height: 960px;
     box-sizing: border-box;
   }
 
@@ -326,18 +325,19 @@ input[type=range]::-webkit-slider-thumb {
 
       @media (max-width: @tabletWidth) {
         font-size: 27.65px;
+        padding: 0 110px 0 110px;
       }  
     }
     &-about {
       font: 400 14px/25px @OpenSans;
       color: @color-light-grey;
       padding: 40px 0 70px 0;
-      width: 517px;
+      width: 520px;
       margin: 0 auto;
 
       @media (max-width: @tabletWidth) {
         font: 400 21px/35px @OpenSans;
-        width: 769px;
+        width: 70%;
         padding: 60px 0 90px 0;
       }      
     }    
