@@ -12,7 +12,12 @@
     @media (max-width: @tabletWidth) {
       font: 400 21px/35px @OpenSans;
       width: 80%;
-    }    
+    }
+    @media (max-width: @mobileWidth) {
+      font: 400 15px/25px @OpenSans;
+      width: 85%;
+      padding: 35px 0 0 0;
+    }
   }
   &__info {
     text-align: left;
@@ -24,7 +29,10 @@
     @media (max-width: @tabletWidth) {
       width: 100%;
       padding: 18px 0 40px 0;
-    }       
+    }
+    @media (max-width: @mobileWidth) {
+      padding: 77px 0 40px 0;
+    }
 
     &_bottom {
       padding-top: 50px;
@@ -55,7 +63,10 @@
       display: block;
       margin: 0 auto;
       padding: 0 85px 0 85px;
-    }        
+    }
+    @media (max-width: @mobileWidth) {
+      padding: 0 55px 0 55px;
+    }
   }
   &__year {
     font: 700 14px/33px @OpenSans;
@@ -63,7 +74,10 @@
 
     @media (max-width: @tabletWidth) {
       font-size: 21px;
-    }      
+    }
+    @media (max-width: @mobileWidth) {
+      font-size: 15px;
+    }  
   }
   &__title {
     font: 700 14px/33px @OpenSans;
@@ -74,7 +88,10 @@
 
     @media (max-width: @tabletWidth) {
       font-size: 21px;
-    }      
+    }
+    @media (max-width: @mobileWidth) {
+      font-size: 15px;
+    }
   }
   &__about {
     font: 400 23px/33px @OpenSans;
@@ -82,7 +99,10 @@
 
     @media (max-width: @tabletWidth) {
       font: 400 34px/42px @OpenSans;
-    }     
+    }
+    @media (max-width: @mobileWidth) {
+      font: 400 24px/33px @OpenSans;
+    }
   }
   &__description {
     font: 400 14px/23px @OpenSans;
@@ -94,7 +114,10 @@
       text-align: justify;
       font: 400 21px/35px @OpenSans;
       padding: 25px 0 35px 0;
-    }      
+    }
+    @media (max-width: @mobileWidth) {
+      font: 400 15px/24px @OpenSans;
+    }
   }
   &__button {
     text-align: center;
@@ -114,7 +137,12 @@
       width: 296px;
       background-size: cover;
       font: 700 21px/90px @OpenSans;
-    }             
+    }
+    @media (max-width: @mobileWidth) {
+      height: 58px;
+      width: 198px;
+      font: 700 15px/63px @OpenSans;
+    }
 
     &_first {
       background-image: url("/static/img/icons/play1.png");

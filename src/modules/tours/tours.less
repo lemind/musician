@@ -12,6 +12,11 @@
     @media (max-width: @tabletWidth) {
       font: 400 21px/35px @OpenSans;
       width: 80%;
+    }
+    @media (max-width: @mobileWidth) {
+      font: 400 15px/25px @OpenSans;
+      width: 87%;
+      padding: 35px 0 0 0; 
     }        
   }
   &__concert {
@@ -25,7 +30,10 @@
     @media (max-width: @tabletWidth) {
       background-position: 30% top;
       height: 100%;
-    } 
+    }
+    @media (max-width: @mobileWidth) {
+      background-position: 60% top;
+    }
 
     &-year {
       font: 700 14px/33px @OpenSans;
@@ -33,7 +41,10 @@
     
       @media (max-width: @tabletWidth) {
         font-size: 21px;
-      }         
+      }
+      @media (max-width: @mobileWidth) {
+        font-size: 15px;
+      }
     }
     &-title {
       font: 700 14px/33px @OpenSans;
@@ -42,16 +53,18 @@
       text-transform: uppercase;
       border-top: 1px solid @color-black;
       margin-bottom: 50px;
-      //width: 400px;
       width: 60%;
 
       @media (max-width: @tabletWidth) {
         font-size: 21px;
-        //width: 583px;
         margin-bottom: 110px;
         width: 60%;
         min-width: 155px;
-      }               
+      }
+      @media (max-width: @mobileWidth) {
+        font-size: 15px;
+        margin-bottom: 60px;
+      }
     }
     &-about {
       font: 400 23px/43px @OpenSans;
@@ -59,29 +72,34 @@
 
       @media (max-width: @tabletWidth) {
         font-size: 34px;
-      }                 
+      }
+      @media (max-width: @mobileWidth) {
+        font-size: 23px;
+      }      
     }
     &-description {
       font: 400 14px/23px @OpenSans;
       color: @color-light-grey;
       display: block;
-      //width: 675px;
-      
 
       @media (max-width: @tabletWidth) {
         font: 400 21px/35px @OpenSans;
         padding-top: 20px;
-        //width: 915px;
-
-      }               
+      }
+      @media (max-width: @mobileWidth) {
+        font: 400 15px/25px @OpenSans;
+        padding-bottom: 40px;
+      }
     }
     &-wrapper {
      padding: 330px 40% 0 300px;
 
       @media (max-width: @tabletWidth) {
         padding: 200px 100px 0 200px;
-
-      }       
+      }
+      @media (max-width: @mobileWidth) {
+        padding: 270px 220px 0 50px;
+      }
     }
   }
   &__button {
@@ -98,12 +116,17 @@
     outline: none;
 
     @media (max-width: @tabletWidth) {
-    width: 290px;
-    height: 83px;
-    font: 700 21px/84px @OpenSans;
-    margin-top: 55px;
-    margin-bottom: 60px;
-    }        
+      width: 290px;
+      height: 83px;
+      font: 700 21px/84px @OpenSans;
+      margin-top: 55px;
+      margin-bottom: 60px;
+    }
+    @media (max-width: @mobileWidth) {
+      width: 196px;
+      height: 56px;
+      font: 700 15px/55px @OpenSans;
+    }
   }
   &__button:hover {
     background-color: rgba(0, 0, 0, 0.05);

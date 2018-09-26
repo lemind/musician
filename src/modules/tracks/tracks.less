@@ -19,6 +19,10 @@
       height: 644px;
       width: 583px;
     }
+    @media (max-width: @mobileWidth) {
+      height: 425px;
+      width: 385px;      
+    }
 
     &-number {
       font: 700 83px @OpenSans;
@@ -32,6 +36,10 @@
         font-size: 125px;
         right: 17px;
         bottom: -50px;
+      }
+      @media (max-width: @mobileWidth) {
+        font-size: 82.29px;
+        bottom: -33px;
       }
     }
   }
@@ -53,6 +61,11 @@
       top: 35px;
       left: 48px;
     }
+    @media (max-width: @mobileWidth) {
+      width: 315px;
+      top: 22px;
+      left: 35px;      
+    }
 
     &-year {
       font: 700 14px/33px @OpenSans;
@@ -60,6 +73,9 @@
 
       @media (max-width: @tabletWidth) {
         font-size: 21px;
+      }
+      @media (max-width: @mobileWidth) {
+        font-size: 15px;
       }
     }
     &-title {
@@ -72,7 +88,10 @@
       @media (max-width: @tabletWidth) {
         font-size: 21px;
         margin-top: 5px;
-      }      
+      }
+      @media (max-width: @mobileWidth) {
+        font-size: 15px;
+      } 
     }
     &-about {
       font: 400 23px/43px @OpenSans;
@@ -84,11 +103,20 @@
         font-size: 34px;
         margin: 55px 0 80px 0;
       }
+      @media (max-width: @mobileWidth) {
+        font: 400 23px/43px @OpenSans;
+        margin: 15px 0 25px 0;
+      }
+
       &_first {
         
         @media (max-width: @tabletWidth) {
           margin: 55px 0 36px 0;
-        }  
+        }
+        @media (max-width: @mobileWidth) {
+          margin: 15px 0 20px 0;
+          font: 400 23px/30px @OpenSans;
+        }
       }
     }
     &-description {
@@ -98,6 +126,9 @@
 
       @media (max-width: @tabletWidth) {
         font: 400 21px/35px @OpenSans;
+      }
+      @media (max-width: @mobileWidth) {
+        font: 400 15px/25px @OpenSans;
       }
     }
   }

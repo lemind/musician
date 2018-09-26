@@ -13,6 +13,11 @@
       font: 400 21px/35px @OpenSans;
       width: 83%;
     }
+    @media (max-width: @mobileWidth) {
+      font: 400 15px/25px @OpenSans;
+      width: 90%;
+      padding: 35px 0 60px 0;
+    }
   }
   &__playlist {
 
@@ -39,6 +44,9 @@
       @media (max-width: @tabletWidth) {
         font-size: 21px;
       }
+      @media (max-width: @mobileWidth) {
+        font-size: 15px;
+      }
     }
     &-title {
       font: 700 14px/33px @OpenSans;
@@ -52,7 +60,10 @@
         font-size: 21px;
         margin-bottom: 40px;
         margin-top: 5px;
-      }      
+      }
+      @media (max-width: @mobileWidth) {
+        font-size: 15px;
+      }
     }
     &-about {
       font: 400 23px/30px @OpenSans;
@@ -63,7 +74,11 @@
       @media (max-width: @tabletWidth) {
         font: 400 34px/40px @OpenSans;
         margin: 20px 0 40px 0;
-      }      
+      }
+      @media (max-width: @mobileWidth) {
+        font: 400 23px/30px @OpenSans;
+        margin: 0 0 25px 0;
+      }
     }
     &-description {
       font: 400 14px/23px @OpenSans;
@@ -72,7 +87,10 @@
 
       @media (max-width: @tabletWidth) {
         font: 400 21px/35px @OpenSans;
-      }      
+      }
+      @media (max-width: @mobileWidth) {
+        font: 400 15px/25px @OpenSans;
+      }
 
       &_bottom {
         padding: 20px 0 10px 0;
@@ -92,7 +110,10 @@
     @media (max-width: @tabletWidth) {
       padding: 52px 90px 60px 52px;
       height: 100%;
-    }       
+    }
+    @media (max-width: @mobileWidth) {
+      padding: 35px 55px 35px 35px;
+    }
   }
   &__button {
     font: 700 14px/55px @OpenSans;
@@ -113,7 +134,13 @@
       width: 300px;
       height: 87px;
       margin-top: 85px;
-    }        
+    }
+    @media (max-width: @mobileWidth) {
+      font: 700 15px/55px @OpenSans;
+      width: 196px;
+      height: 56px;
+      margin-top: 55px; 
+    }
   }
   &__button:hover {
     background-color: rgba(0, 0, 0, 0.05);
@@ -129,11 +156,14 @@
       font: 400 14px @OpenSans;
       color: #abacac;
       display: inline-block;
-      padding: 10px 10px 0 25px;
       vertical-align: bottom;
 
       @media (max-width: @tabletWidth) {
         font: 400 18.33px @OpenSans;
+        padding-top: 20px;
+      }
+      @media (max-width: @mobileWidth) {
+        font: 400 12px @OpenSans;
       }
     }
     &-listeners::before {
@@ -146,7 +176,11 @@
       @media (max-width: @tabletWidth) {
         font-size: 30px;
         padding: 0 15px 0 30px;
-      }         
+      }
+      @media (max-width: @mobileWidth) {
+        padding: 0 10px 0 20px;
+        font-size: 20px;
+      }     
     }
     &-favorite::before {
       content: "\f004";
@@ -158,7 +192,11 @@
       @media (max-width: @tabletWidth) {
         font-size: 22px;
         padding: 0 15px 0 30px;
-      }      
+      }
+      @media (max-width: @mobileWidth) {
+        padding: 0 10px 0 20px;
+        font-size: 15px;
+      }
     }
     &-share::before {
       content: "\f14d";
@@ -170,7 +208,11 @@
       @media (max-width: @tabletWidth) {
         font-size: 22px;
         padding: 0 15px 0 30px;
-      }            
+      }
+      @media (max-width: @mobileWidth) {
+        padding: 0 10px 0 20px;
+        font-size: 15px;
+      }
     }
     &-discuss::before {
       content: "\f27a";
@@ -182,7 +224,11 @@
       @media (max-width: @tabletWidth) {
         font-size: 22px;
         padding: 0 15px 0 30px;
-      }            
+      }
+      @media (max-width: @mobileWidth) {
+        padding: 0 10px 0 20px;
+        font-size: 15px;
+      }              
     }
   }
   &__player {
@@ -245,6 +291,10 @@
       width: 90%;
       font: 400 18.45px @OpenSans;
     }
+    @media (max-width: @mobileWidth) {
+      font: 400 12px @OpenSans;
+      left: 20px;
+    }
 
     &-time_color {
       color: #abacac;
@@ -259,6 +309,9 @@
       @media (max-width: @tabletWidth) {
         font-size: 25px;
         padding-right: 25px;
+      }
+      @media (max-width: @mobileWidth) {
+        font-size: 15px;
       }
     }
     &-range {
@@ -282,6 +335,9 @@ input[type=range] {
 
   @media (max-width: @tabletWidth) {
     width: 72%;
+  }
+  @media (max-width: @mobileWidth) {
+    width: 65%;
   }
 }
 input[type=range]:focus {
@@ -311,8 +367,10 @@ input[type=range]::-webkit-slider-thumb {
   @media (max-width: @tabletWidth) {
     margin: 128px 0 105px 0;
     padding: 336px 0 85px 0;
-    //height: 960px;
     box-sizing: border-box;
+  }
+  @media (max-width: @mobileWidth) {
+    padding: 245px 0 85px 0;
   }
 
   &__text {
@@ -326,7 +384,11 @@ input[type=range]::-webkit-slider-thumb {
       @media (max-width: @tabletWidth) {
         font-size: 27.65px;
         padding: 0 110px 0 110px;
-      }  
+      }
+      @media (max-width: @mobileWidth) {
+        font: 400 17px/27px @Dosis;
+        padding: 0 70px 0 70px;
+      }
     }
     &-about {
       font: 400 14px/25px @OpenSans;
@@ -339,7 +401,12 @@ input[type=range]::-webkit-slider-thumb {
         font: 400 21px/35px @OpenSans;
         width: 70%;
         padding: 60px 0 90px 0;
-      }      
+      }
+      @media (max-width: @mobileWidth) {
+        font: 400 15px/25px @OpenSans;
+        width: 75%;
+        padding: 30px 0 55px 0;
+      }
     }    
     &-description {
       font: 400 14px @OpenSans;
@@ -349,6 +416,10 @@ input[type=range]::-webkit-slider-thumb {
       @media (max-width: @tabletWidth) {
         font-size: 20.93px;
         padding-bottom: 115px;
+      }
+      @media (max-width: @mobileWidth) {
+        font-size: 14px;
+        padding-bottom: 75px;
       }
     }    
   }
@@ -369,6 +440,11 @@ input[type=range]::-webkit-slider-thumb {
         height: 18px;
         width: 18px;
         border-radius: 9px;
+      }
+      @media (max-width: @mobileWidth) {
+        height: 10px;
+        width: 10px;
+        border-radius: 5px;
       }
     }
     &-item:hover {

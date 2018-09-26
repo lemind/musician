@@ -3,7 +3,7 @@
   margin: 0 auto;
 }
 .l-wrapper {
-  min-width: 350px;
+  min-width: 400px;
 }
 .title {
   padding: 0 50px 0 50px;
@@ -17,6 +17,11 @@
   @media (max-width: @tabletWidth) {
     font: 400 74.5px @Dosis;
   }
+
+  @media (max-width: @mobileWidth) {
+    font: 400 50.49px @Dosis;
+    margin-top: 100px;
+  }
 }
 .title-decor {
   border-bottom: 1px solid @color-black;
@@ -28,7 +33,10 @@
 
   @media (max-width: @tabletWidth) {
     top: 47px;
-  }  
+  }
+  @media (max-width: @mobileWidth) {
+    top: 33px;
+  }
 }
 .title_discography {
   color: #8f5f50;
@@ -38,6 +46,10 @@
   @media (max-width: @tabletWidth) {
     width: 700px;
     margin-left: -350px;
+  }
+  @media (max-width: @mobileWidth) {
+    width: 500px;
+    margin-left: -250px;
   }
 }
 .title_tours {
@@ -49,12 +61,19 @@
     width: 700px;
     margin-left: -350px;
   }
+  @media (max-width: @mobileWidth) {
+    width: 500px;
+    margin-left: -250px;
+  }  
 }
 .title_compositions {
 
   @media (max-width: @tabletWidth) {
     white-space: nowrap;
     font: 400 65px @Dosis;
+  }
+  @media (max-width: @mobileWidth) {
+    font: 400 50.49px @Dosis;
   }
 }
 .title-decor_compositions {
@@ -65,7 +84,12 @@
     width: 700px;
     margin-left: -350px;
     top: 42px;
-  }    
+  }
+  @media (max-width: @mobileWidth) {
+    width: 600px;
+    margin-left: -300px;
+    top: 33px;
+  }
 }
 .title_events {
   padding: 0 0 100px 0;
@@ -77,6 +101,9 @@
     font: 400 63px @Dosis;
     width: 555px;
   }
+  @media (max-width: @mobileWidth) {
+    font: 400 50.49px @Dosis;
+  }
 }
 .title-decor_events {
   margin-left: -305px;
@@ -86,9 +113,18 @@
     margin-left: -288px;
     top: 41px;
   }
+  @media (max-width: @mobileWidth) {
+    width: 500px;
+    margin-left: -289px;
+    top: 33px;
+  }    
 }
 .title_history {
   color: #5b5c5a;
+
+  @media (max-width: @mobileWidth) {
+    margin-top: 0;
+  }
 }
 .title-decor_history {
   width: 272px;
@@ -97,6 +133,10 @@
   @media (max-width: @tabletWidth) {
     width: 410px;
     margin-left: -205px;
+  }
+  @media (max-width: @mobileWidth) {
+    width: 270px;
+    margin-left: -135px;    
   }
 }
 .title_contact {
@@ -107,6 +147,9 @@
     padding-bottom: 5px;
     width: 555px;
   }
+  @media (max-width: @mobileWidth) {
+    width: 500px;
+  }
 }
 .title-decor_contact {
   margin-left: -500px;
@@ -114,5 +157,9 @@
   @media (max-width: @tabletWidth) {
     width: 555px;
     margin-left: -270px;
+  }
+  @media (max-width: @mobileWidth) {
+    width: 500px;
+    margin-left: -246px;
   }
 }
