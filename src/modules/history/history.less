@@ -53,15 +53,21 @@
     padding-top: 55px;
     white-space: nowrap;
     overflow: hidden;
-    text-align: center;
-    width: 98%;
-    margin: 0 auto;
+    margin-top: -5px;
 
     @media (max-width: @tabletWidth) {
       font-size: 53px;
+      margin-left: -60%;
+      position: relative;
+    }
+    @media (min-width: 751px) and (max-width:1080px) {
+      padding-top: 20px;
     }
     @media (max-width: @mobileWidth) {
       font-size: 35.49px;
+    }
+    @media (max-width: @miniWidth) {
+      padding-top: 0;
     }
   }
   &__line {
@@ -127,7 +133,10 @@
     @media (max-width: @tabletWidth) {
       font-size: 18px;
       max-width: 265px;
-      padding: 30px 17px 0 0;
+      padding: 30px 20px 0 0;
+    }
+    @media (min-width: 751px) and (max-width: 824px) {
+      padding: 20px 58px 0 0;
     }
     @media (max-width: @mobileWidth) {
       font-size: 14px;
