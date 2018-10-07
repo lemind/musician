@@ -81,22 +81,17 @@
       padding-bottom: 19px;
     }
   }
-  &__data {
+  &__date {
     padding: 0 20px 0 20px;
 
     @media (max-width: @tabletWidth) {
       padding: 0 25px 0 25px;
     }
 
-    &_hidden {
-      @media (max-width: @tabletWidth) {
-        display: none;
-      }
-    }
-    &_bold {
+    &_active {
       color: #575a59;
     }
-    &_bold::before {
+    &_active::before {
       content: " ";
       height: 10px;
       width: 10px;
@@ -109,7 +104,7 @@
         margin: 0 80px 15px 0;
       }      
     }
-    &_bold::after {
+    &_active::after {
       content: " ";
       height: 10px;
       width: 10px;
