@@ -65,6 +65,11 @@ module.exports = {
       }
     ],
 },
+resolve: {
+  alias: {
+    modules: path.resolve('./src/modules'),
+  }
+},
 plugins: [
     new ExtractTextPlugin('static/css/styles.css'),
     new BrowserSyncPlugin({
