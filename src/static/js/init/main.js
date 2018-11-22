@@ -1,5 +1,6 @@
 import GLOBAL from '../global/global';
 import Menu from '../components/Menu';
+import './data'
 
 function initMenu() {
   if (typeof Menu === 'undefined') {
