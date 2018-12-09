@@ -1,17 +1,14 @@
 <div id="discography" class="discography">
   <div class="l-layout">
-  <div class="title title_discography">Discography
-    <div class="title-decor title-decor_discography"></div>
-  </div>
-  <span class="discography__title-about">September 4 world heard Night Visions, the first full album. He reached the 2 position in the chart Billboard 200. The single «It's Time» took 22 th place in the Billboard Hot 100, 4th in the Billboard Alternative and Billboard Rock, and now went platinum.</span>
-  <div class="discography__albums">
-    {{#each items}}
-      {{> item}}
-        <article {{#if button1}} class="discography__button_first"{{/if}}>
-        <article {{#if button2}} class="discography__button_second"{{/if}}>
-        <article {{#if button3}} class="discography__button_third"{{/if}}>
+    <div class="title title_discography">Discography
+      <div class="title-decor title-decor_discography"></div>
+    </div>
+    <span class="discography__title-about">September 4 world heard Night Visions, the first full album. He reached the 2 position in the chart Billboard 200. The single «It's Time» took 22 th place in the Billboard Hot 100, 4th in the Billboard Alternative and Billboard Rock, and now went platinum.</span>
+    <div class="discography__albums">
+      {{#each items}}
+        {{> item}}
       {{/each}}
-  </div>
+    </div>
   </div>
   <div class="discography__bottom"></div>
 </div>
