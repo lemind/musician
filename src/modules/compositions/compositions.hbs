@@ -5,72 +5,9 @@
     </div>
     <span class="compositions__about">"It's Time" was released as the lead single from Continued Silence and It's Time, both extended plays preceding Night Visions' release.</span>
     <div class="compositions__playlist">
-      <div class="compositions__song">
-        <div class="compositions__info">
-          <span class="compositions__song-year">03.04.2015</span>
-          <span class="compositions__song-title">indian sammer</span>
-          <span class="compositions__song-about">Sam Feldt ft. Kimberly Anne - Show Me Love (EDX's Indian Summer Remix)</span>
-          <span class="compositions__song-description">"Radioactive" is a song recorded by American rock band Imagine Dragons for their major-label debut EP Continued Silence and later on their debut studio album, Night Visions (2012), as the opening track. "Radioactive" was</span>
-        <div class="compositions__details">
-          <button class="compositions__button">Visit the iTunes</button>
-          <div class="compositions__details-social">
-            <span class="compositions__details-listeners">182,364</span>
-            <span class="compositions__details-favorite">10k</span>
-            <span class="compositions__details-share">3k</span>
-            <span class="compositions__details-discuss">90</span>
-          </div>
-        </div>
-        </div>
-        <div class="compositions__player">
-          <div class="compositions__player-wrapper">
-            <iframe class="compositions__video" src="https://player.vimeo.com/video/180178373" allow="encrypted-media" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-      <div class="compositions__song compositions__song_reverse">     
-        <div class="compositions__info">
-          <span class="compositions__song-year">20.07.2015</span>
-          <span class="compositions__song-title">indian sammer Remix</span>
-          <span class="compositions__song-about">Sam Feldt - Show Me Love (EDX's Indian Summer Remix)</span>
-          <span class="compositions__song-description">Amsterdam's Sam Feldt earned attention in Europe and then worldwide for his melodic house remixes, mixtapes, and collaborations including 2014's "Bloesem" with De Hofnar and "Hot Skin" with Kav Verhouzer on...</span>
-        <div class="compositions__details">
-          <button class="compositions__button">Visit the iTunes</button>
-          <div class="compositions__details-social">
-            <span class="compositions__details-listeners">12,289</span>
-            <span class="compositions__details-favorite">8k</span>
-            <span class="compositions__details-share">1k</span>
-            <span class="compositions__details-discuss">23</span>
-          </div>
-          </div>
-        </div>
-        <div class="compositions__player compositions__player_reverse">
-          <div class="compositions__player-wrapper">
-            <iframe class="compositions__video" src="https://player.vimeo.com/video/180178373" allow="encrypted-media" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          </div>
-        </div> 
-      </div>
-      <div class="compositions__song">     
-        <div class="compositions__info">
-          <span class="compositions__song-year">03.04.2015</span>
-          <span class="compositions__song-title">chill nation</span>
-          <span class="compositions__song-about">James Bay - Let It Go (Bearson Remix)</span>
-          <span class="compositions__song-description compositions__song-description_bottom">A soulful singer/songwriter from a small English town with a penchant for crafting moving and evocative folk-pop confections in the vein of Ed Sheeran, Foy Vance, and Ben Howard, James Bay hails from the North Hertf...</span>
-        <div class="compositions__details">
-          <button class="compositions__button">Visit the iTunes</button>
-          <div class="compositions__details-social">
-            <span class="compositions__details-listeners">182,364</span>
-            <span class="compositions__details-favorite">10k</span>
-            <span class="compositions__details-share">3k</span>
-            <span class="compositions__details-discuss">96</span>
-          </div>
-        </div>
-        </div>
-        <div class="compositions__player">
-          <div class="compositions__player-wrapper">
-            <iframe class="compositions__video" src="https://player.vimeo.com/video/180178373" allow="encrypted-media" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
+      {{#each items}}
+        {{> compositions-item}}
+      {{/each}}
     </div>
   </div>
 </div>

@@ -1,0 +1,22 @@
+<div class="compositions__song">
+  <div class="compositions__info">
+    <span class="compositions__song-year">{{ year }}</span>
+    <span class="compositions__song-title">{{ title }}</span>
+    <span class="compositions__song-about">{{ about }}</span>
+    <span class="compositions__song-description {{ description_bottom }}">{{ description }}</span>
+  <div class="compositions__details">
+    <button class="compositions__button">{{ button }}</button>
+    <div class="compositions__details-social">
+      <span class="compositions__details-listeners">{{ listeners }}</span>
+      <span class="compositions__details-favorite">{{ favorite }}</span>
+      <span class="compositions__details-share">{{ share }}</span>
+      <span class="compositions__details-discuss">{{ discuss }}</span>
+    </div>
+  </div>
+  </div>
+  <div class="compositions__player {{ player_reverse }}">
+    <div class="compositions__player-wrapper">
+      <iframe class="compositions__video" src="https://player.vimeo.com/video/180178373" allow="encrypted-media" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+  </div>
+</div>

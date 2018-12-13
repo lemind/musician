@@ -1,95 +1,9 @@
 <div id="tracks" class="tracks">
   <div class="l-layout">
     <div class="tracks__songs">
-      <div class="tracks__item">
-        <img class="tracks__cover" src="/static/img/track-cover1.jpg">
-        <div class="tracks__text">
-          <span class="tracks__text-year">03.04.2015</span>
-          <span class="tracks__text-title">chill nation</span>
-          <span class="tracks__text-about tracks__text-about_first">James Bay - Let It Go (Bearson Remix)</span>
-          <span class="tracks__text-description">A soulful singer/songwriter from a small English town with a penchant for crafting moving and evocative folk-pop confections in the vein of Ed Sheeran, Foy Vance, and Ben Howard, James Bay hails from the North Hertf shire market town of Hitchin. Bay honed his skills regionally, eventually landing high-expo</span>      
-        </div>
-        <span class="tracks__item-number">01</span>
-      </div>
-      <div class="tracks__item">
-        <img class="tracks__cover" src="/static/img/track-cover2.jpg">
-        <div class="tracks__text">
-          <span class="tracks__text-year">01.03.2015</span>
-          <span class="tracks__text-title">chill nation</span>
-          <span class="tracks__text-about">Smoke and Mirrors</span>
-          <span class="tracks__text-description">Hard Rock Cafe teamed with the band, granting them the first ever full access to take control of Hard Rock Cafe's internal video system (more than 20,000 screens at all 151 locations</span>
-        </div>
-        <span class="tracks__item-number">02</span>
-      </div>
-      <div class="tracks__item">
-        <img class="tracks__cover" src="/static/img/track-cover3.jpg">
-        <div class="tracks__text">
-          <span class="tracks__text-year">04.04.2015</span>
-          <span class="tracks__text-title">chill nation</span>
-          <span class="tracks__text-about">It Comes Back to You</span>
-          <span class="tracks__text-description">In 2015 a world tour, entitled the Smoke and Mirrors Tour is scheduled in promotion of the world-wide release of Smoke and Mirrors.</span>      
-        </div>
-        <span class="tracks__item-number">03</span>
-      </div>
-      <div class="tracks__item">
-        <img class="tracks__cover" src="/static/img/track-cover4.jpg">
-        <div class="tracks__text">
-          <span class="tracks__text-year">01.07.2015</span>
-          <span class="tracks__text-title">chill nation</span>
-          <span class="tracks__text-about">Let It Go (Bearson Remix)</span>
-          <span class="tracks__text-description">A soulful singer/songwriter from a small English town with a penchant for crafting moving and evocative folk-pop confections in the vein of Ed Sheeran, Foy Vance, and Ben</span>      
-        </div>
-        <span class="tracks__item-number">04</span>
-      </div>
-      <div class="tracks__item">
-        <img class="tracks__cover" src="/static/img/track-cover5.jpg">
-        <div class="tracks__text">
-          <span class="tracks__text-year">02.11.2015</span>
-          <span class="tracks__text-title">chill nation</span>
-          <span class="tracks__text-about">I Don't Mind</span>
-          <span class="tracks__text-description">Hell and Silence is an EP by Las Vegas rock group Imagine Dragons, released in March 2010 in the United States. It was recorded at Battle Born Studios.[1] All songs were written by Imagine Dragons and self-produced. The EP was in part mixed by Grammy nominated engineer Mark Needham.</span>      
-        </div>
-        <span class="tracks__item-number">05</span>
-      </div>
-      <div class="tracks__item">
-        <img class="tracks__cover" src="/static/img/track-cover6.jpg">
-        <div class="tracks__text">
-          <span class="tracks__text-year">06.09.2015</span>
-          <span class="tracks__text-title">chill nation</span>
-          <span class="tracks__text-about">Smoke + Mirrors</span>
-          <span class="tracks__text-description">A soulful singer/songwriter from a small English town with a penchant for crafting</span>      
-        </div>
-        <span class="tracks__item-number">06</span>
-      </div>
+      {{#each items}}
+        {{> tracks-item}}
+      {{/each}}
     </div>
   </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div>
