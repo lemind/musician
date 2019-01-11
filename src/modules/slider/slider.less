@@ -66,34 +66,6 @@
       }
     }    
   }
-  &__dot {
-    position: relative;
-
-    &-item {
-      border: 1px solid @color-white;
-      height: 8px;
-      width: 8px;
-      border-radius: 4px;
-      background-color: transparent;
-      cursor: pointer;
-      display: inline-block;
-      margin: 0 18px 0 18px;
-
-      @media (max-width: @tabletWidth) {
-        height: 18px;
-        width: 18px;
-        border-radius: 9px;
-      }
-      @media (max-width: @mobileWidth) {
-        height: 10px;
-        width: 10px;
-        border-radius: 5px;
-      }
-    }
-    &-item:hover {
-      background-color: @color-white;
-    }
-  }
   &__scroll {
     position: relative;
 
@@ -110,7 +82,7 @@
       font-size: 38px;
       color: @color-black;
       position: absolute;
-      top: 67px;
+      bottom: 205px;
       left: 25px;
       z-index: 3;
       cursor: pointer;
@@ -121,7 +93,7 @@
       font-size: 38px;
       color: @color-black;
       position: absolute;
-      top: 67px;
+      bottom: 205px;
       right: 25px;
       z-index: 3;
       cursor: pointer;
@@ -130,7 +102,7 @@
   &__scroll::before {
     content: " ";
     position: absolute;
-    top: 180px;
+    top: -136px;
     left: 0;
     margin-top: -180px;
     border-width: 90px;
@@ -140,11 +112,50 @@
   &__scroll::after {
     content: " ";
     position: absolute;
-    top: 180px;
+    top: -136px;
     right: 0;
     margin-top: -180px;
     border-width: 90px;
     border-style: solid;
     border-color: transparent white transparent transparent;
   }
+}
+.swiper-pagination {
+  margin-bottom: 50px;
+}
+.swiper-button-next, .swiper-button-prev {
+  background-image: none;
+
+  @media (max-width: @tabletWidth) {
+    display: none;
+  }
+  @media (max-width: @mobileWidth) {
+    display: none;
+  }  
+}
+.swiper-pagination-bullet {
+  border: 1px solid @color-white;
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  display: inline-block;
+
+  @media (max-width: @tabletWidth) {
+    height: 14px;
+    width: 14px;
+    border-radius: 7px;
+  }
+  @media (max-width: @mobileWidth) {
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+  }
+}
+.swiper-pagination-bullet-active {
+  background: @color-white;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 18px;
 }

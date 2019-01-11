@@ -2,6 +2,29 @@ import GLOBAL from '../global/global';
 import Menu from '../components/Menu';
 import './data';
 
+import Swiper from 'swiper';
+var mySwiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+
+
+
+
+
+  console.log(mySwiper)
+
+
 function initMenu() {
   if (typeof Menu === 'undefined') {
     return false;
@@ -22,3 +45,7 @@ function initMenu() {
 document.addEventListener('DOMContentLoaded', function() {
   initMenu();
 });
+
+
+
+
