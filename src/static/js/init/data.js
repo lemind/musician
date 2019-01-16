@@ -120,4 +120,29 @@ document.addEventListener("DOMContentLoaded", function() {
     ]
   });
   document.getElementById('module-tracks').appendChild(div);
+});
+
+const sliderTemplate = require('modules/slider/slider.hbs');
+document.addEventListener("DOMContentLoaded", function() {
+  var div = document.createElement('div');
+  div.innerHTML = sliderTemplate({
+    items: [
+      { title: "In 2008, lead singer Dan Reynolds met",
+        subtitle: "drummer Andrew Tolman at Brigham Young University where they were both students",
+        about: "Tolman recruited longtime high school friend Daniel Wayne 'Wing' Sermon, who had graduated from Berklee College of Music. Tolman later recruited his wife, Brittany Tolman, to sing backup and play keys.",
+        description: "- Early years (2008–10)",
+      },
+      { title: "In 2008, lead singer Dan Reynolds met",
+        subtitle: "drummer Andrew Tolman at Brigham Young University where they were both students",
+        about: "Tolman recruited longtime high school friend Daniel Wayne 'Wing' Sermon, who had graduated from Berklee College of Music. Tolman later recruited his wife, Brittany Tolman, to sing backup and play keys.",
+        description: "- Early years (2010–12)",
+      },
+      { title: "In 2008, lead sinsger Dan Reynolds met",
+        subtitle: "drummer Andrew Tolman at Brigham Young University where they were both students",
+        about: "Tolman recruited longtime high school friend Daniel Wayne 'Wing' Sermon, who had graduated from Berklee College of Music. Tolman later recruited his wife, Brittany Tolman, to sing backup and play keys.",
+        description: "- Early years (2012–14)",
+      },                         
+    ]
+  });
+  document.getElementById('module-slider').appendChild(div);
 }); 

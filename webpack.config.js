@@ -62,7 +62,12 @@ module.exports = {
       {
         test: /\.hbs$/,
         loader: ['handlebars-loader']
-      }
+      },
+      {
+        test: /\.js$/,
+        exclude : /node_modules\/(?!(dom7|ssr-window|swiper)\/).*/,
+        use: { loader: "babel-loader?presets[]=es2015" } 
+      }      
     ],
 },
 resolve: {
@@ -91,3 +96,5 @@ plugins: [
     {copyUnmodified: true})
   ]
 }
+
+
