@@ -4,7 +4,8 @@ import './data';
 import 'swiper/dist/css/swiper.min.css';
 import Swiper from 'swiper';
 
-var mySwiper = new Swiper('.swiper-container', {
+function initSwiper() {
+  var mySwiper = new Swiper('.swiper-container', {
       slidesPerView: 1,
       spaceBetween: 30,
       loop: true,
@@ -17,6 +18,7 @@ var mySwiper = new Swiper('.swiper-container', {
         prevEl: '.swiper-button-prev',
       },
     });
+}
 
 
 function initMenu() {
@@ -38,6 +40,7 @@ function initMenu() {
 
 document.addEventListener('DOMContentLoaded', function() {
   initMenu();
+  initSwiper();
 });
 
 
